@@ -1,0 +1,32 @@
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:1rem 4rem;
+    background:#111;
+}
+
+.header img{
+    width:120px;
+}
+
+.header nav{
+    display:flex;
+    align-items:center;
+    gap:2rem;
+}
+
+.header nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+}
+
+.header button{
+    background:#4066ff;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:6px;
+    cursor:pointer;
+}

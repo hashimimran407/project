@@ -1,0 +1,20 @@
+.companies{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    flex-wrap:wrap;
+
+    padding:3rem 6rem;
+    gap:2rem;
+}
+
+.companies img{
+    width:150px;
+    opacity:.8;
+    transition:.3s;
+}
+
+.companies img:hover{
+    opacity:1;
+    transform:scale(1.05);
+}
