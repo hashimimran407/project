@@ -1,4 +1,3 @@
-/* ===== HEADER / NAVBAR ===== */
 .header {
   display: flex;
   justify-content: space-between;
@@ -9,39 +8,26 @@
   top: 0;
   z-index: 999;
 }
-
-/* ===== LOGO ===== */
 .header-logo {
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 0.15rem; 
   cursor: pointer;
+  user-select: none;
 }
-
 .logo-text {
-  color: white;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 700;
-  letter-spacing: -0.5px;
+  color: #FFFFFF; /* Baqi 'lle' white rahega */
+  letter-spacing: -1.5px; 
+  text-transform: capitalize;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
-
-/* Blue dot next to Homyz */
-.logo-dot {
-  width: 10px;
-  height: 10px;
-  background: #4066ff;
-  border-radius: 50%;
-  display: inline-block;
-  margin-bottom: 12px; /* dot thoda upar */
-}
-
-/* ===== NAV LINKS ===== */
 .header-nav {
   display: flex;
   align-items: center;
   gap: 2.5rem;
 }
-
 .header-nav a {
   color: rgba(255, 255, 255, 0.85);
   text-decoration: none;
@@ -49,12 +35,9 @@
   font-weight: 500;
   transition: color 0.2s ease;
 }
-
 .header-nav a:hover {
   color: #ffffff;
 }
-
-/* ===== CONTACT BUTTON ===== */
 .contact-btn {
   background: #4066ff;
   color: white;
@@ -66,29 +49,34 @@
   cursor: pointer;
   transition: background 0.2s ease, transform 0.1s ease;
 }
-
 .contact-btn:hover {
   background: #2949c6;
   transform: scale(1.03);
 }
-
-/* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
   .header {
     padding: 1rem 1.5rem;
   }
-
   .header-nav {
     gap: 1.2rem;
   }
-
   .header-nav a {
     font-size: 0.8rem;
   }
 }
-
 @media (max-width: 480px) {
   .header-nav a {
-    display: none; /* Mobile pe sirf button dikhao */
+    display: none;
   }
+}
+logo-highlight {
+  color: #947705; 
+  font-weight: 900; 
+}
+.logo-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #cb7606; 
+  border-radius: 50%;
+  margin-top: 1.1rem; 
 }

@@ -1,32 +1,21 @@
-.header{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:1rem 4rem;
-    background:#111;
+.h-wrapper {
+  background: var(--black);
+  color: white;
 }
 
-.header img{
-    width:120px;
+.h-container {
+  justify-content: space-between;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: var(--secondary);
 }
 
-.header nav{
-    display:flex;
-    align-items:center;
-    gap:2rem;
+/* Links ke darmiyan 2rem ka gap dene ke liye */
+.h-menu {
+  gap: 2rem;
 }
 
-.header nav a{
-    color:white;
-    text-decoration:none;
-    font-weight:500;
-}
-
-.header button{
-    background:#4066ff;
-    color:white;
-    border:none;
-    padding:10px 20px;
-    border-radius:6px;
-    cursor:pointer;
+.h-menu a:hover {
+  cursor: pointer;
+  color: white;
 }

@@ -1,0 +1,75 @@
+.f-wrapper {
+  background-color: #ffffff; 
+  padding: 3rem 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+.f-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.f-left {
+  gap: 1rem;
+}
+.f-logo-container {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+.f-logo-text {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #1f3e72; 
+}
+.f-logo-dot {
+  width: 12px;
+  height: 12px;
+  background-color: #ff922b; 
+  border-radius: 50%;
+  margin-top: 0.5rem;
+}
+.f-vision {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: #8c8c8c;
+}
+.f-right {
+  align-items: flex-end;
+  gap: 0.5rem;
+}
+.f-info-title {
+  color: #1f3e72 !important;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.f-address {
+  font-size: 0.9rem;
+  color: #8c8c8c;
+  margin-bottom: 1.5rem;
+}
+.f-menu {
+  display: flex;
+  gap: 1.5rem;
+  font-weight: 600;
+  color: #000000;
+  font-size: 0.95rem;
+}
+.f-menu span {
+  cursor: pointer;
+  transition: color 200ms ease;
+}
+.f-menu span:hover {
+  color: #ff922b; 
+}
+@media (max-width: 768px) {
+  .f-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .f-right {
+    align-items: center;
+  }
+}

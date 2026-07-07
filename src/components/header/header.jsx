@@ -1,20 +1,27 @@
-import "./header.css";
+import React from 'react';
+import './Header.css';
 
 const Header = () => {
   return (
-    <header className="header">
-      <div className="header-logo">
-        <span className="logo-text">Homyz</span>
-        <span className="logo-dot"></span>
+    <section className="h-wrapper">
+      <div className="flexCenter paddings innerWidth h-container">
+        
+        {/* Yahan Logo Image aayegi */}
+        <img src="./logo.png" alt="logo" width={100} />
+
+        {/* Yahan Menu items aayenge */}
+        <div className="flexCenter h-menu">
+          <a href="#residencies">Residencies</a>
+          <a href="#value">Our Value</a>
+          <a href="#contact-us">Contact Us</a>
+          <a href="#get-started">Get Started</a>
+          <button className="button">
+            <a href="#contact-us">Contact</a>
+          </button>
+        </div>
+
       </div>
-      <nav className="header-nav">
-        <a href="#">Residencies</a>
-        <a href="#">Our Value</a>
-        <a href="#">Contact Us</a>
-        <a href="#">Get Started</a>
-        <button className="contact-btn">Contact</button>
-      </nav>
-    </header>
+    </section>
   );
 };
 

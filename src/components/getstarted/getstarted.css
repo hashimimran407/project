@@ -1,0 +1,39 @@
+.g-wrapper {
+  background-color: #f9f8f8; 
+  padding: 2rem 0;
+}
+.g-container .inner-container {
+  gap: 1.5rem;
+  background: #4169e1;
+  padding: 2rem;
+  border-radius: 10px;
+  border: 6px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+  box-shadow: 0px 10px 30px rgba(65, 105, 225, 0.2);
+}
+.g-container .primaryText {
+  color: #FFFFFF !important;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+.g-container .secondaryText {
+  color: rgba(255, 255, 255, 0.7) !important;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+.g-button {
+  background: #5d82f7;
+  border: 2px solid #FFFFFF;
+  border-radius: 6px;
+  padding: 0.6rem 1.5rem;
+  cursor: pointer;
+  transition: transform 200ms ease;
+}
+.g-button a {
+  color: #FFFFFF;
+  font-weight: 600;
+  text-decoration: none;
+}
+.g-button:hover {
+  transform: scale(1.05);
+}
