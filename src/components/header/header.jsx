@@ -1,27 +1,34 @@
 import React from 'react';
-import './Header.css';
+import './header.css';
 
 const Header = () => {
+
+  const goTo = (id) => (e) => {
+    e.preventDefault();
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   return (
-    <section className="h-wrapper">
-      <div className="flexCenter paddings innerWidth h-container">
-        
-        {/* Yahan Logo Image aayegi */}
-        <img src="./logo.png" alt="logo" width={100} />
-
-        {/* Yahan Menu items aayenge */}
-        <div className="flexCenter h-menu">
-          <a href="#residencies">Residencies</a>
-          <a href="#value">Our Value</a>
-          <a href="#contact-us">Contact Us</a>
-          <a href="#get-started">Get Started</a>
-          <button className="button">
-            <a href="#contact-us">Contact</a>
-          </button>
-        </div>
-
+    <header className="header">
+      <div className="header-logo">
+        <span className="logo-text">
+          <span className="logo-highlight">h</span>omyz
+        </span>
+        <span className="logo-dot"></span>
       </div>
-    </section>
+
+      <nav className="header-nav">
+        <a href="#residencies" onClick={goTo('residencies')}>Residencies</a>
+        <a href="#value" onClick={goTo('value')}>Our Value</a>
+        <a href="#contact-us" onClick={goTo('contact-us')}>Contact Us</a>
+        <a href="#get-started" className="get-started-btn" onClick={goTo('get-started')}>
+          Get Started
+        </a>
+      </nav>
+    </header>
   );
 };
 

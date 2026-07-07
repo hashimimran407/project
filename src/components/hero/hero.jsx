@@ -6,14 +6,11 @@ const Hero = () => {
   return (
     <section className="hero">
       <div className="hero-left">
-        <div className="orange-circle"></div>
-
-        <h1>
+        <h1 className="hero-title">
           Discover <br />
-          Most Suitable <br />
+          Most <span className="hero-highlight">Suitable</span> <br />
           Property
         </h1>
-
         <p>
           Find a variety of properties that suit you very easily
           <br />

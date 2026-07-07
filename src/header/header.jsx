@@ -1,30 +1,24 @@
-import React from 'react';
-import './Header.css';
+import React from "react";
+import "./header.css";
 
 const Header = () => {
   return (
-    <section className="h-wrapper">
-      {/* Video ki standard classes: flexCenter, paddings, innerWidth, h-container */}
-      <div className="flexCenter paddings innerWidth h-container">
-        
-        {/* Logo image ka sahi path aur width */}
-        <img src="./logo.png" alt="logo" width={100} />
-
-        {/* Links ke darmiyan gap ke liye 'h-menu' class zaroori hai */}
-        <div className="flexCenter h-menu">
-          <a href="#residencies">Residencies</a>
-          <a href="#value">Our Value</a>
-          <a href="#contact-us">Contact Us</a>
-          <a href="#get-started">Get Started</a>
-          
-          {/* Button par video ki standard 'button' class apply hogi */}
-          <button className="button">
-            <a href="#contact-us">Contact</a>
-          </button>
+    <header className="header-wrapper">
+      <div className="header-container">
+        <div className="header-logo">
+          NorthLab<span>Estate</span>
         </div>
-
+        <nav className="header-menu">
+          <a href="#residencies" className="menu-item">Residencies</a>
+          <a href="#value" className="menu-item">Our Value</a>
+          <a href="#contact" className="menu-item">Contact Us</a>
+          <a href="#get-started" className="menu-item">Get Started</a>
+        </nav>
+        <div className="header-action">
+          <button className="cta-button">Contact</button>
+        </div>
       </div>
-    </section>
+    </header>
   );
 };
 

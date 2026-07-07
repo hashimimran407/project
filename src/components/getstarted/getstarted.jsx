@@ -1,9 +1,9 @@
 import React from 'react';
-import './GetStarted.css';
+import './getstarted.css';
 
 const GetStarted = () => {
   return (
-    <section className="g-wrapper">
+    <section className="g-wrapper" id="get-started" style={{scrollMarginTop: '80px'}}>
       <div className="paddings innerWidth g-container">
         <div className="flexColCenter inner-container">
           <span className="primaryText">Get started with Homyz</span>

@@ -1,21 +1,71 @@
-.h-wrapper {
-  background: var(--black);
-  color: white;
+.header-wrapper {
+  background-color: transparent;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 1.5rem 0;
+  width: 100%;
 }
 
-.h-container {
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
   justify-content: space-between;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  color: var(--secondary);
+  align-items: center;
 }
 
-/* Links ke darmiyan 2rem ka gap dene ke liye */
-.h-menu {
-  gap: 2rem;
+.header-logo {
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-.h-menu a:hover {
+.header-logo span {
+  color: #ff3b30;
+  font-weight: 400;
+}
+
+.header-menu {
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.menu-item {
+  color: #eeeeee;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.2s ease-in-out;
+}
+
+.menu-item:hover {
+  color: #ff3b30;
+}
+
+.cta-button {
+  background-color: #ff3b30;
+  color: #ffffff;
+  border: none;
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 20px;
   cursor: pointer;
-  color: white;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.cta-button:hover {
+  background-color: #e03128;
+  transform: scale(1.03);
+}
+
+@media (max-width: 768px) {
+  .header-menu {
+    display: none;
+  }
 }
