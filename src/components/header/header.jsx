@@ -1,7 +1,7 @@
 import React from 'react';
 import './header.css';
 
-const Header = () => {
+const Header = ({ onLoginClick }) => {
 
   const goTo = (id) => (e) => {
     e.preventDefault();
@@ -24,9 +24,12 @@ const Header = () => {
         <a href="#residencies" onClick={goTo('residencies')}>Residencies</a>
         <a href="#value" onClick={goTo('value')}>Our Value</a>
         <a href="#contact-us" onClick={goTo('contact-us')}>Contact Us</a>
-        <a href="#get-started" className="get-started-btn" onClick={goTo('get-started')}>
+        <a href="#get-started" className="get-started-link" onClick={goTo('get-started')}>
           Get Started
         </a>
+        <button className="login-nav-btn" onClick={onLoginClick}>
+          Login
+        </button>
       </nav>
     </header>
   );

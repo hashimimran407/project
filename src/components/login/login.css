@@ -1,0 +1,107 @@
+.lm-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.lm-bg {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4); 
+}
+
+.lm-card {
+  position: relative;
+  z-index: 10;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 2.5rem;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  font-family: "Poppins", sans-serif;
+}
+
+.lm-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #8c8c8c;
+}
+
+.lm-close:hover {
+  color: #1f3e72;
+}
+
+.lm-card h2 {
+  color: #1f3e72;
+  font-size: 1.8rem;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+.lm-error {
+  color: #e74c3c;
+  font-size: 0.85rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.lm-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.lm-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.lm-field label {
+  color: #1f3e72;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.lm-field input {
+  padding: 0.75rem 1rem;
+  border: 1.5px solid #e5e5e5;
+  border-radius: 8px;
+  outline: none;
+  font-size: 0.9rem;
+  font-family: inherit;
+}
+
+.lm-field input:focus {
+  border-color: #4066ff;
+}
+
+.lm-submit {
+  width: 100%;
+  padding: 0.85rem;
+  background-color: #4066ff;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background-color 0.2s;
+}
+
+.lm-submit:hover {
+  background-color: #2949c6;
+}
