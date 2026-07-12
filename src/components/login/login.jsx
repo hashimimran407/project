@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./login.css";
 
-const LoginModal = ({ onClose }) => {
+const LoginModal = ({ onClose, onLoginSuccess }) => {
   const [isRegister, setIsRegister] = useState(false);
   const [formData, setFormData] = useState({ firstName: "", lastName: "", email: "", password: "" });
   const [agreed, setAgreed] = useState(false);
@@ -13,7 +13,14 @@ const LoginModal = ({ onClose }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsLoading(true);
-    setTimeout(() => { setIsLoading(false); onClose(); }, 1400);
+    setTimeout(() => {
+      setIsLoading(false);
+      if (onLoginSuccess) {
+        onLoginSuccess();
+      } else {
+        onClose();
+      }
+    }, 1400);
   };
 
   const switchMode = () => {
